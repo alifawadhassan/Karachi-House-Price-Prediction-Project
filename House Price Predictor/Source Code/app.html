@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Realty price prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+     <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300"
+      rel="stylesheet"
+    />
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<h1>Realty Price Prediction</h1>
+<div class="container">
+    <div class= 'content'>
+        <form class="form">
+            <h2>Area</h2>
+            <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft"  placeholder="Please enter area in sqft">
+            <h2>Bedrooms</h2>
+               <select name="uiBed" id="uiBed">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select>
+           
+            </form>
+        <form class="form">
+            <h2>Bath</h2>
+            <select name="uiBathrooms" id="uiBathrooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+           
+            <h2>Location</h2>
+            <div>
+                
+          <select class="location" name="" id="uiLocations">
+            <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                
+          </select>
+        </div>
+        <div class="btn-group">
+            <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button></div>
+            <div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+    </div>
+</div>
+ <h4>
+        Project Designed and Developed by: Shahzain Shafique, Ali Fawad Hassan,and Basil
+        Shafique
+      </h4>
+</body>
+</html>
